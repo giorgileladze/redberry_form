@@ -1,0 +1,299 @@
+
+:root {
+	--Redberry-red: #FE3B1F;
+	--Primary-bg: #0C0D0E;
+	--Primary-stroke: #525557;
+}
+
+
+.slide_container {
+	width: 1920px;
+	height: 1080px;
+	overflow: hidden;
+}
+
+.slides {
+	 position: absolute;
+    width: 1920px;
+    height: 1080px;
+    transform: translate(-110%);
+}
+
+.dot_container {
+	position: absolute;
+	width: auto;
+	height: 19px;
+	left: 302px;
+	bottom: 157px;
+	background-color: white;
+}
+
+.hidden {
+	display: none;
+}
+
+.dots {
+	width: 19px;
+	height: 19px;
+	border-radius: 10px;
+	background-color: var(--Redberry-red);
+	margin-right: 10px;
+	margin-left: 10px;
+	opacity: 0.4;
+}
+
+.left_panel {
+	width: 46%;
+	height: 1080px;
+	display: inline-block;
+}
+
+.right_panel {
+	width: 53%;
+	height: 1080px;
+	background-color: var(--Primary-bg);
+	display: inline-block;
+}
+
+.right_panel > h1 {
+	position: absolute;
+	top: 112px;
+	left: 1089px;
+	color: var(--Redberry-red);
+	font-family: Rowdies;
+	font-size: 64px;
+	line-height: 79px;
+	display: flex;
+}
+
+.left_panel > h1 {
+	position: absolute;
+	width: 648px;
+	top: 105px;
+	left: 105px;
+	color: var(--Redberry-red);
+	font-family: Rowdies;
+	font-size: 64px;
+	line-height: 79px;
+	text-align: center;
+}
+
+p {
+	position: absolute;
+	width: 705px;
+	height: 606px;
+	top: 195px;
+	left: 1089px;
+
+	font-family: Montserrat;
+	font-size: 24px;
+	line-height: 200%;
+
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.05em;
+
+	color: #FFFFFF;
+}
+
+.rockatman {
+	position: absolute;
+	width: 335px;
+	left: 800px;
+	top: 640px;
+}
+
+.submit_page {
+	background: var(--Primary-bg);
+}
+
+.submit_btn {
+	position: absolute;
+	width: 395px;
+	height: 79px;
+	left: 758px;
+	top: 408px;
+	background: var(--Redberry-red);
+	border-radius: 50px;
+
+	font-family: Montserrat;
+	font-size: 36px;
+	line-height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: #FFFFFF;
+}
+
+.go-back_btn {
+	position: absolute;
+	width: 190px;
+	height: 50px;
+	left: 861px;
+	top: 522px;
+
+	font-family: Montserrat;
+	font-size: 28px;
+	line-height: 34px;
+	text-align: center;
+	text-decoration-line: underline;
+
+	color: #FFFFFF;
+
+}
+
+.thank_page {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background: var(--Primary-bg);
+}
+
+.thank_page > h1 {
+	position: absolute;
+	top: 344PX;
+	left: 427px;
+	font-family: Rowdies;
+	font-size: 96px;
+	color: var(--Redberry-red);
+}
+
+/* inputs styles */
+
+::placeholder{
+	opacity: 1;
+	font-family: Montserrat;
+	font-style: italic;
+	font-size: 14px;
+	line-height: 17px;
+	padding-left: 57px;
+}
+
+.personal-info_form {
+	position: absolute;
+	top: 390px;
+	left: 195px;
+}
+
+.personal-info_form > input,
+.technical-skilset_form > input,
+#skills,
+.skills {
+	width: 447px;
+	height: 48px;
+	margin-bottom: 40px;
+	border: 1px solid #525557;
+}
+
+#skills {
+	padding-left: 57px;
+}
+
+.technical-skilset_form {
+	position: absolute;
+	top: 390px;
+	left: 195px;
+}
+
+.add_skill {
+	width: 195.57px;
+	height: 17.14px;
+
+	font-family: Montserrat;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+	float: right;
+
+	color: #FFFFFF;
+	background: var(--Redberry-red);
+}
+
+.skills_container {
+	margin-top: 80px;
+	max-height: 250px;
+	overflow: scroll;
+}
+
+.covid_pol {
+	position: absolute;
+	top: 300px;
+	left: 195px;
+	width: 447px;
+}
+
+.input-cov_data,
+.input-vacc_data {
+	width: 447px;
+	height: 48px;
+	margin-bottom: 20px;
+	border: 1px solid #525557;
+}
+
+.data-conteiner {
+	margin-top: 30px;
+}
+
+.user_info {
+	position: absolute;
+	top: 350px;
+	left: 195px;
+}
+
+label {
+	font-family: Montserrat;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+h5 {
+	font-family: Montserrat;
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 3px;
+}
+
+h6 {
+	display: inline-block;
+	margin-left: 25px;
+	margin-top: 20px;
+	font-family: Montserrat;
+	font-style: italic;
+	font-size: 14px;
+}
+
+.remove_btn {
+	float: right;
+	padding-top: 15px;
+}
+
+textarea {
+	border: 1px solid #525557;
+	max-width: 415px;
+	max-height: 120px; 
+}
+
+.message_container {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.message {
+	background: var(--Primary-stroke);
+	color: white;
+	font-size: 22px
+}
+
+.arrow_down {
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  
+  border-top: 15px solid var(--Primary-stroke);
+}
+
+

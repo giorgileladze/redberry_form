@@ -1,0 +1,113 @@
+
+:root {
+	--Redberry-red: #FE3B1F;
+}
+
+body{
+	background-color: black;
+}
+
+.stars {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	background: url(stars.png);
+}
+
+.welcomeTXT {
+	position: absolute;
+	width: 1090px;
+	height: 212px;
+	left: 434px;
+	top: 175px;
+	
+	font-family: Rowdies;
+	font-size: 96px;
+	line-height: 119px;
+	text-align: center;
+	
+	color: var(--Redberry-red);
+}
+
+
+.start_ques {
+	position: absolute;
+	width: 395px;
+	height: 79px;
+	left: 754px;
+	top: 492px;
+
+	background: var(--Redberry-red);
+	border-radius: 50px;
+	
+	font-family: Montserrat;
+	font-size: 24px;
+	line-height: 29px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration-line: none;
+	color: #FFFFFF;
+}
+
+.start_ques: hover {
+	background-color: green;
+}
+
+.submited-ap{
+	position: absolute;
+	width: 338px;
+	height: 66px;
+	left: 795px;
+	top: 589px;
+
+	font-family: Montserrat;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	text-decoration-line: underline;
+
+	color: #FFFFFF;
+}
+
+@keyframes lost_in_cosmos {
+	0% {transform: translate(0, 0) rotate(0deg)}
+	50% {transform: translate(1125px, -200px) rotate(360deg);}
+	100% {transform: translate(2250px, 200px) rotate(720deg);}
+}
+
+.other_rockatman {
+	position: absolute;
+	width: 335px;
+	height: 250px;
+	left: -280px;
+	top: 300px;
+	
+	animation-name: lost_in_cosmos;
+	animation-duration: 30s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+
+@keyframes levitate {
+	0% {transform: translateY(0)}
+	50% {transform: translateY(50px)}
+	100% {transform: translateY(0)}
+}
+
+.rockatman {
+	position: absolute;
+	width: 535px;
+	height: 417px;
+	left: 661px;
+	top: 640px;
+	
+	animation-name: levitate;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+
+
+
+

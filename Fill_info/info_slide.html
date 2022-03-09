@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="info_style.css" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+	<div class="slide_container">
+		<div class="slides">
+			<div class="left_panel">
+				<h1>Hey, Rocketeer, what </br> are your coordinates?</h1>
+				<form class="personal-info_form">
+					<input type="text" id="f_name" name="f_name" placeholder="First Name"><br>
+					<input type="text" id="l_name" name="l_name" placeholder="Last Name"><br>
+					<input type="email" id="email" name="email" placeholder="E mail"><br>
+  					<input type="text" id="phone" name="phone" placeholder="+995 5-- --- ---">
+				</form>
+			</div>
+			<div class="right_panel">
+				<h1>Redberry Origins</h1>
+				<p>You watch “What? Where? When?” Yeah. Our founders used to play it. That’s where they got a question about a famous American author and screenwriter Ray Bradbury. Albeit, our CEO Gaga Darsalia forgot the exact name and he answered Ray Redberry. And at that moment, a name for a yet to be born company was inspired - Redberry 😇</p>
+			</div>
+		</div>
+		<div class="slides">
+			<div class="left_panel">
+				<h1>Tell us about your skills</h1>
+				<form class="technical-skilset_form">
+					<select id='skills'>
+						<option value="" disabled selected hidden>Skills</option>
+					</select><br>
+					<input type="number" id="exp-duration" name="year" placeholder="Experience Duration in Years" min="1" max="30"><br>
+					<botton class="add_skill">Add Programming Language</botton>
+					<div class="skills_container">
+						
+					</div>
+				</form>
+			</div>
+			<div class="right_panel">
+				<h1>A bit about our battles</h1>
+				<p>As we said, Redberry has been on the field for quite some time now, and we have touched and embraced a variety of programming languages, technologies, philosophies, and frameworks. We are battle-tested in PHP Laravel Stack with Vue.js, refined in React, and allies with Serverside technologies like Docker and Kubernetes, and now we have set foot in the web3 industry.</p>
+			</div>
+		</div>
+		<div class="slides">
+			<div class="left_panel">
+				<h1>Covid Stuff</h1>
+				<form class='covid_pol'>
+					<h5 id="work_pref">how would you prefer to work?</h5>
+					<input type="radio" name="work_ap" id="Office" value="From Sairme Office">
+					<label for="Office">From Sairme Office</label><br>
+					<input type="radio" name="work_ap" id="Home" value="From Home">
+					<label for="Home">From Home</label><br>
+					<input type="radio" name="work_ap" id="Hybrid" value="Hybrid">
+					<label for="Hybrid">Hybrid</label>
+					
+					<h5 id="cov_hist">Did you contact covid 19? :(</h5>
+					<input type="radio" name="covid_history" id="had_cov" value="Yes">
+					<label for="had_cov">Yes</label><br>
+					<input type="radio" name="covid_history" id="not-had_cov" value="No">
+					<label for="not-had_cov">NO</label> <br>
+					
+					<div class="data-conteiner hidden" id="data_1">
+						<label for="had-cov_at" >When:</label>
+						<input type="date" class="input-cov_data" id="had-cov_at">
+					</div>
+					
+					<h5 id="vacc_hist">Have you been vaccinated?</h5>
+					<input type="radio" name="vacc_history" id="vaccinated" value="Yes">
+					<label for="vaccinated">Yes</label><br>
+					<input type="radio" name="vacc_history" id="not-vaccinated" value="No">
+					<label for="not-vaccinated">NO</label> <br>
+					
+					<div class="data-conteiner hidden" id="data_2">
+						<label for="vaccinated" >When:</label>
+						<input type="date" class="input-vacc_data" id="vaccinated">
+					</div>
+				</form>
+			</div>
+			<div class="right_panel">
+				<h1>Redberry Covid Policies</h1>
+				<p>As this infamous pandemic took over the world, we adjusted our working practices so that our employees can be as safe and comfortable as possible. We have a hybrid work environment, so you can either work from home or visit our lovely office on Sairme Street. If it was up to us, we would love you to see us in the office because we think face-to-face communications > Zoom meetings. Both on the fun and productivity scales. </p>
+			</div>
+		</div>
+		<div class="slides">
+			<div class="left_panel">
+				<h1>What about you?</h1>
+				<form class="user_info">
+				   <h5 id="devtalks_id">Would you attend Devtalks and maybe <br> also organize your own?</h5>
+					<input type="radio" name="attend" id="attend" value="Yes">
+					<label for="attend">Yes</label><br>
+					<input type="radio" name="attend" id="not-attend" value="No">
+					<label for="not-attend">NO</label>
+					
+					<h5 id="txt-area_1_headline" class="hidden">What would you speak about at Devtalk?</h5>
+					<textarea class="hidden" id='txt-area_1' name='dev' rows='7' cols='50' placeholder="I would..."></textarea>
+					
+					<h5>Tell us something special</h5>
+					<textarea id='txt-area_2' name='spec' rows='4' cols='50' placeholder="I..."></textarea>
+				</form>
+			</div>
+			<div class="right_panel">
+				<h1>Redberrian Insights</h1>
+				<p>We were soo much fun before the pandemic started! Parties almost every weekend and lavish employee birthday celebrations! Unfortunately, covid ruined that fun like it did almost everything else in the world. But we try our best to zhuzh it up a bit. For example, we host biweekly Devtalks where our senior and lead developers talk about topics they are passionate about. Previous topics have included Web3, NFT, Laravel 9, Kubernetes, etc. We hold these talks in the office but you can join our Zoom broadcast as well. Feel free to join either as an attendee or a speaker!</p>
+			</div>
+		</div>
+			<div class="slides submit_page">
+				<botton class="submit_btn">Submit</botton> </br>
+				<botton class="go-back_btn">go back</botton>
+			</div>
+		</div>
+		<div class="dot_container"></div>
+	</div>
+	<div class="hidden message_container">
+		<div class="message">hweg uawher heo hwoeahr kdjhf! </div>
+		<div class="arrow_down"><div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
